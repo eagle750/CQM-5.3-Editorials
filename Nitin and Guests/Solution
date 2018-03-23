@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#define ll long long int
+#define vi vector<ll>
+#define vvi vector<vector<ll> >
+#define pb push_back
+#define mp make_pair
+#define rep(i, n)  for(int i = 1; i < =(n); ++i)
+#define SORT(v) sort(v.begin(),v.end())
+#define fill(a,v)  memset(a, v, sizeof (a))
+#define T ll t; icin(t);while(t--)
+#define MAX 100005
+
+using namespace std;
+int main()
+ {
+     int n,m,k,a=1,c=1;
+cin >> n >> m >> k;
+	m-=n;
+	while(m>0){
+		if(k+a<=n) c++;
+		if(k-a>=1) c++;
+		m-=c;
+		a++;
+	}
+	cout<<a;
+    return 0;
+ }
